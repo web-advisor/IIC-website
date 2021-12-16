@@ -256,7 +256,7 @@ Admin Profile Operations :
                 $error = "This Username is already taken !";
             } else {
                 //  ---------------- Siging up if no user found with entered email ----------
-                $sql2 = "INSERT INTO `admin` (`username`,`email`,`password`) VALUES ('" . mysqli_real_escape_string($link, $_POST['username']) . "','" . mysqli_real_escape_string($link, $_POST['email']) . "','" . mysqli_real_escape_string($link, $_POST['password']) . "')";
+                $sql2 = "INSERT INTO `admin` (`username`,`email`,`password`,`code`) VALUES ('" . mysqli_real_escape_string($link, $_POST['username']) . "','" . mysqli_real_escape_string($link, $_POST['email']) . "','" . mysqli_real_escape_string($link, $_POST['password']) . "','".mysqli_real_escape_string($link,"")."')";
                 $result2 = mysqli_query($link, $sql2);
                 if ($result2) {
                     $id = mysqli_insert_id($link);
