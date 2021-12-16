@@ -119,6 +119,9 @@ textarea::placeholder{
   line-height: 1.6;
 }
 
+#orientation{
+  line-height: 1.6;
+}
 
 @media (min-width: 1400px){
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -149,6 +152,11 @@ textarea::placeholder{
 .ideathon-img{
     background-image: url('images/Ideathon.jpeg') !important;
     background-size: contain !important;
+}
+
+.orientation-img{
+    background-image: url('images/Orientation.jpeg') !important;
+    background-size: contain !important; 
 }
 
 .footer-tittle ul li a:hover > .link-icon{
